@@ -15,9 +15,18 @@ import javax.swing.border.EmptyBorder;
 
 public class Othello {
 	private int[][] board = new int[8][8];
+	private int turn = 0;
 	
 	public int[][] getBoardState() {
 		return board;
+	}
+	
+	public int IsMyTurn() {
+		return turn;
+	}
+	
+	public int CanPutDisc(int x, int y) {
+		return 1;
 	}
 }
 
